@@ -204,6 +204,10 @@
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
+    outline: none;
+    border: none;
+    font: inherit;
+    text-align: center;
   }
   
   /**
