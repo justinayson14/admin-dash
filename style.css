@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Roboto:wght@400;700&display=swap');
 
 :root {
     box-sizing: border-box;
@@ -23,9 +23,97 @@ body {
 }
 
 .header {
-    background-color: #101010;
+    background-color: #131313;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+}
+
+.header .top-header {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-header .search-bar {
+    display: flex;
+    width: 700px;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+}
+
+.search-bar .search-bar-input {
+    flex-grow: 1;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px;
+    background-color: #1c1c1c;
+}
+
+.search-bar-input:focus {
+    background-color: rgb(233, 233, 233);
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+}
+
+.small-profile {
+    width: 50px;
+    border-radius: 100vh;
+}
+
+.top-header .top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bot-header {
+    display: grid;
+    grid-template-columns: 150px 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.bot-header img {
+    width: 100px;
+    border-radius: 100vh; 
+    margin-left: 50px;
+}
+
+.bot-header .greeting {
+    font-size: 1rem;
+}
+
+.greeting .user {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.bot-header .buttons {
+    display: flex;
+    justify-self: center;
+    gap: 25px;
+}
+
+.buttons button {
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #21673d;
+    color: #fff;
+}
+
+.buttons button:hover {
+    font-weight: 700;
 }
 
 .sidebar {
@@ -84,16 +172,20 @@ body {
 }
 
 .top-logos,
-.bot-logos {
+.bot-logos,
+.search-button img,
+.notification {
     width: 1.5rem;
 }
 
-.sidebar img{
+.sidebar img,
+.search-button img,
+.notification {
     filter: invert(1);
 }
 
 .main-content {
-    background-color: #121212; 
+    background-color: #1c1c1c; 
     grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
