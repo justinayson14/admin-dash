@@ -30,6 +30,7 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .header .top-header {
@@ -248,7 +249,8 @@ body {
 
 .side-content {
     display: grid;
-    grid-template-rows: .8fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
 }
 
 .content-box {
@@ -276,4 +278,9 @@ body {
 
 .content-box ul:last-child li {
     margin: 30px 0px;
+}
+
+.grid-container .card,
+.content-box {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
